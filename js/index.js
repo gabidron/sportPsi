@@ -1,5 +1,3 @@
-
-
 const API_URL = "https://sportpsi-api.herokuapp.com/api/posts";
 const API_BASE_URL = "https://sportpsi-api.herokuapp.com/";
 let noOfPages = 0;
@@ -62,6 +60,9 @@ const getPosts = () => {
     })
 }
 
+const cookiesAccept = () => {
+    document.getElementById('cookies').style.display = 'none';
+}
 
 function hasClass(element, className) {
     return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
@@ -80,8 +81,8 @@ const nextPage = () => {
 
 const previousPage = () => {
 
-    for(let i = 2; i <= noOfPages; ++i){
-        if(hasClass(document.getElementById(`page-${i}`), 'active')) {
+    for (let i = 2; i <= noOfPages; ++i) {
+        if (hasClass(document.getElementById(`page-${i}`), 'active')) {
             activatePage(i - 1);
             disablePage(i);
         }
