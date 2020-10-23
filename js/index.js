@@ -19,11 +19,11 @@ const getPostsByCategory = (category) => {
 }
 
 const goToAbout = (elem) => {
-    window.location.href = "http://127.0.0.1:5500/despre.html?" + elem.innerText;
+    window.location.href = "https://gabidron.github.io/sportPsi/despre.html?" + elem.innerText;
 }
 
 const goToResources = (elem) => {
-    window.location.href = "http://127.0.0.1:5500/resurse.html?type=" + elem.innerText;
+    window.location.href = "https://gabidron.github.io/sportPsi/resurse.html?type=" + elem.innerText;
 }
 
 const getPostsBySearch = () => {
