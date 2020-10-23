@@ -1,0 +1,31 @@
+body{
+    padding: 2vh 3vw;
+}
+.row{
+    height: 96vh;
+}
+#menu{
+    padding-top: 5px;
+    text-align: center;
+    border: 3.5px solid white;
+    border-radius: 15px;
+    color: rgb(251, 251, 251);
+    background-color: rgb(14, 14, 14);
+}
+hr{
+    background-color: rgb(251, 251, 251);
+}
+
+.col-2 button{
+    background-color: #50ACBE;
+    color: #F8FCFC;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.col-8 button{
+    color: floralwhite;
+}

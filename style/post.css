@@ -1,0 +1,40 @@
+#individual-post-title {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    color: #333;
+}
+
+#individual-post-date {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #f1f4f8;
+    border-bottom: 1px solid #f1f4f8;
+    padding-left: 16px;
+    color: #adb5bd;
+}
+
+#individual-post-content {
+    white-space: pre-line;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #495057;
+    line-height: 1.4;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+}
+#comm{
+    background-color: #027BFD;
+    color: white;
+    padding: 2.5vh 2vw;
+    font-size: larger;
+    font-style: italic;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+}
+#comment-section{
+    margin-top: 3.5vh;
+    padding: 3.5vh 2vw;
+}

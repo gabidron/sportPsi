@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Postare noua</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/new-post.css">
+</head>
+
+<body>
+    <div class="container new-post-page">
+        <header>
+            <div class="header-container">
+                <div class="header-blog-text">
+                    <div class="title">Resursa noua</div>
+                    <div class="subtext">
+                        Adauga o resursa.
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="main-container">
+                <div class="form-container">
+                    <form>
+                        <input id="form-res-title" type="text" name="post-title" placeholder="Titlu resursa" />
+                        <div>
+                            <label>Alege un pdf</label>
+                            <input type="file" accept="application/pdf">
+                        </div>
+
+                        <select id='form-res-select' class="mdb-select md-form" searchable="Search here..">
+                            <option value="Articole">Articole</option>
+                            <option value="Carti">Carti</option>
+                            <option value="Review-uri de carte">Review carte</option>
+                        </select>
+
+                        <button id="form-res-submit" type="button" onclick="submitNewRes()">Posteaza</button>
+                    </form>
+                </div>
+                <div class="navigation">
+                    <a href="admin.html">Inapoi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/res.js" async defer></script>
+</body>
+
+</html>

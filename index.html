@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sport Psi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="home-page">
+
+        <div class="social">
+            <ul class="socialIcons">
+                <li class="facebook">
+                    <a href="https://www.facebook.com/SPORT-PSI-103790801451816" target="_blank">
+                        <i class="fa fa-fw fa-facebook"></i>Facebook
+                    </a>
+                </li>
+                <br>
+                <li class="instagram">
+                    <a href="https://www.instagram.com/sport._.psi/?hl=ro" target="_blank">
+                        <i class="fa fa-fw fa-instagram"></i>Instagram
+                    </a>
+                </li>
+            </ul>
+
+            <style>
+                ul.socialIcons {
+                    padding: 0;
+                    text-align: center;
+                }
+                
+                .socialIcons li {
+                    background-color: yellow;
+                    list-style: none;
+                    display: inline-block;
+                    margin: 4px;
+                    border-radius: 2em;
+                    overflow: hidden;
+                }
+                
+                .socialIcons li a {
+                    display: block;
+                    padding: 0.5em;
+                    min-width: 2.2em;
+                    max-width: 2.2em;
+                    height: 2.2em;
+                    white-space: nowrap;
+                    line-height: 1.5em;
+                    /*it's working only when you write text with icon*/
+                    transition: 0.5s;
+                    text-decoration: none;
+                    font-family: arial;
+                    color: #fff;
+                }
+                
+                .socialIcons li i {
+                    margin-right: 0.5em;
+                }
+                
+                .socialIcons li:hover a {
+                    max-width: 200px;
+                    padding-right: 1em;
+                }
+                
+                .socialIcons .facebook {
+                    background-color: #3b5998;
+                    box-shadow: 0 0 16px #3b5998;
+                }
+                
+                .socialIcons .instagram {
+                    background-color: #cd486b;
+                    box-shadow: 0 0 16px #cd486b;
+                }
+            </style>
+        </div>
+
+
+
+
+        <header>
+
+            <nav class="navbar navbar-expand-lg navbar-dark info-color" style="background-color: rgba(20, 20, 20, 0.5);">
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <!--n active class-->
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Despre</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink2">
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Sport PSI')">Sport PSI</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Psihologie sportiva')">Psihologie sportiva</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Psiholog sportiv')">Psiholog sportiv</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Consiliere psihologica sportiva')">Consiliere psihologica sportiva</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Certificari')">Certificari</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Specialistul sport Psi spune...</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink2">
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Cand sportivii mai rateaza')">Cand
+                  sportivii mai rateaza</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Povestea din spatele reusitei')">Povestea
+                  din spatele reusitei</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Despre ei, exemplele')">Despre ei,
+                  exemplele</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Motivarea in sport')">Motivarea in
+                  sport</a>
+                                <a class="dropdown-item" href="#" onclick="getPostsByCategory('Increderea in viata sportivului')">Increderea in viata sportivului</a>
+                        </li>
+
+                        <li class="nav-iteml">
+                            <a class="nav-link" href="#" onclick="getPostsByCategory('Evenimentele sportive sub lupa psihologului sportiv')">Evenimentele sportive sub lupa psihologului sportiv</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick='getPostsByCategory("Comentarii la comentarii")'>Comentarii la comentarii</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="getPostsByCategory('Nutritie sportiva')">Nutritie sportiva</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="webinarii.html">Webinarii</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resurse</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink2">
+                                <a class="dropdown-item" href="#" onclick="goToResources(this)">Articole</a>
+                                <a class="dropdown-item" href="#" onclick="goToResources(this)">Carti</a>
+                                <a class="dropdown-item" href="#" onclick="goToResources(this)">Review-uri de carte</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <!-- Links -->
+
+                    <form class="form-inline" onsubmit="getPostsBySearch(); return false;">
+                        <div class="md-form my-0">
+                            <input id='search' class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                    </div>
+                    <!-- Collapsible content -->
+
+            </nav>
+
+
+
+            <div class="header-container">
+                <div class="profile-image"></div>
+                <div class="title">Sport Psi</div>
+                <div class="subtext">Despre sport, prin lentila psihologului</div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="main-container blog-posts">
+                <!-- All of the posts will be added here -->
+            </div>
+        </div>
+        <div class="alert alert-dismissible text-center cookiealert" role="alert">
+            <div class="cookiealert-container">
+                <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com/" target="_blank">Learn more</a>
+
+                <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+                I agree
+            </button>
+            </div>
+        </div>
+        </div>
+        <script src="js/index.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Postare noua</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/new-post.css">
+</head>
+
+<body>
+    <div class="container new-post-page">
+        <header>
+            <div class="header-container">
+                <div class="header-blog-text">
+                    <div class="title">Postare noua</div>
+                    <div class="subtext">
+                        Scrie un articol!
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="main-container">
+                <div class="navigation">
+                    <a href="admin.html">Inapoi</a>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <input id="form-post-title" type="text" name="post-title" placeholder="Titlu articol" />
+                        <textarea id="form-post-content" name="post-content" placeholder="Continut articol"></textarea>
+                        <div>
+                            <label>Alege o imagine</label>
+                            <input type="file" name="post-image" accept="image/*">
+                        </div>
+
+                        <select id='form-post-select' class="mdb-select md-form" searchable="Search here..">
+                            <option value="" disabled selected>Alege categoria</option>
+                            <option value="Sport PSI">Sport PSI</option>
+                            <option value="Psihologie sportiva">Psihologie sportiva</option>
+                            <option value="Psiholog sportiv">Psiholog sportiv</option>
+                            <option value="Consiliere psihologica sportiva">Consiliere psihologica sportiva</option>
+                            <option value="Certificari">Certificari</option>
+                            <option value="Cand sportivii mai rateaza">Cand sportivii mai rateaza</option>
+                            <option value="Povestea din spatele reusitei">Povestea din spatele reusitei</option>
+                            <option value="Despre ei, exemplele">Despre ei, exemplele</option>
+                            <option value="Motivarea in sport">Motivarea in sport</option>
+                            <option value="Increderea in viata sportivului">Increderea in viata sportivului</option>
+                            <option value="Evenimentele sportive sub lupa psihologului sportiv">Evenimentele sportive sub lupa psihologului sportiv</option>
+                            <option value="Comentarii la comentarii">Comentarii la comentarii</option>
+                            <option value="Nutritie sportiva">Nutritie sportiva</option>
+                        </select>
+
+                        <button id="form-post-submit" type="button" onclick="submitNewPost()">Posteaza</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/new-post.js" async defer></script>
+</body>
+
+</html>

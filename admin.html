@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sport Psi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-2" id="menu">
+            <h3>ADMIN</h3>
+            <hr>
+            <button onclick="article()">Articole</button>
+            <br>
+            <button onclick="comms()">Comentarii</button>
+            <br>
+            <button onclick="res()">Resurse</button>
+            <br>
+            <button onclick="msg()">Mesaje</button>
+            <br>
+            <button onclick="web()">Webinarii</button>
+            <br>
+            <button onclick="webReq()">Cereri webinarii</button>
+        </div>
+        <div class="col-8" style="background-color: crimson; color: lavenderblush;">
+
+            <div id='article'>
+                <h3>Articole</h3>
+                <button id='new-post' onclick="goToNewPostPage()" style="background-color: transparent; border:none;">Adauga un articol nou</button>
+                <hr>
+                <div class="row" style="height: 5vh;">
+                    <div class="col-3">Nume Articol</div>
+                    <div class="col-3">Autor</div>
+                    <div class="col-4" style="text-align: right;">
+                        EDIT/DELETE
+                    </div>
+                </div>
+
+                <div id = "posts" class="row"></div>
+            </div>
+
+
+
+            <div id="comms">
+                <h3>Comentarii</h3>
+                <br>
+                <hr>
+                <div class="row" style="height:5vh;">
+                    <div class="col-6">Comentariu</div>
+                    <div class="col-4">Vezi postrea/Aproba/Respinge</div>
+                </div>
+                <div id="comments" class="row"></div>
+            </div>
+
+
+
+            <div id="res">
+                <h3>Resurse</h3>
+                <button id='new-post' onclick="goToNewResPage()" style="background-color: transparent; border:none;">Adauga o resursa noua</button>
+                <hr>
+                <div class="row" style="height:5vh;">
+                    <div class="col-3">Titlu</div>
+                    <div class="col-3">Categorie</div>
+                    <div class="col-2">Publcat pe</div>
+                    <div class="col-2">Sterge</div>
+                </div>
+                <div id="resources" class="row"></div>
+            </div>
+
+
+
+            <div id="msg">
+                <h3>Mesaje</h3>
+                <hr>
+                <div class="row" style="height:5vh;">
+                    <div class="col-6">Mesaj</div>
+                    <div class="col-3">Email</div>
+                    <div class="col-2">Trimis pe</div>
+                </div>
+                <div id="messages" class="row"></div>
+            </div>
+
+
+
+            <div id="web">
+                <h3>Webinarii</h3>
+                <button id='new-post' onclick="goToNewWebPage()" style="background-color: transparent; border:none;">Adauga un webinar nou</button>
+                <hr>
+                <div class="row" style="height:5vh;">
+                    <div class="col-6">Titlu</div>
+                    <div class="col-2">Publicat pe</div>
+                    <div class="col-2">Sterge</div>
+                </div>
+                <div id="webs" class="row"></div>
+            </div>
+
+            <div id="webReq">
+                <h3>Cereri webinarii</h3>
+                
+                <div class="row" style="height: 5vh;">
+                    <div class="col-5">Webinar</div>
+                    <div class="col-5">Email</div>
+                </div>
+                <div id="websReq" class="row"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/admin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
