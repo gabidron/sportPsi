@@ -163,7 +163,7 @@ const buildPosts = (blogPosts) => {
         }
         index++;
         blogPostsContent += `
-            <a class="post-link" href="${postLink}">
+            <a class="post-link" href="/sportPsi${postLink}">
                 <div class="post">
                     <div class="post-image" style="background-image: url(${postImage})"></div>
                     <div class="post-content">
