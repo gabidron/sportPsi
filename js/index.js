@@ -153,7 +153,12 @@ const buildPosts = (blogPosts) => {
         const postDate = new Date(parseInt(blogPost.added_date)).toDateString();
 
         if (index == 0) {
-            blogPostsContent += `<div id = "${pageIndex}">`;
+            blogPostsContent += `<div id = "${pageIndex}">
+            Sport-Psi este o cale deschisă tuturor celor care vor să vadă în sport mai mult 
+            decât o întrecere sau competiție - o poveste cu și despre sportivul din fiecare
+            <br>
+            <hr>`;
+
         } else {
             if (index % 10 == 0) {
                 pageIndex++;
