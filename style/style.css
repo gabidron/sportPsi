@@ -212,6 +212,15 @@ header::before {
     margin: 0;
 }
 
+#cookies {
+    background-color: white;
+    bottom: 50px;
+    width: 75%;
+    left: auto;
+    position: fixed;
+    z-index: 10;
+}
+
 .post-text {
     overflow: hidden;
     max-height: 65px;
